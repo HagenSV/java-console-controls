@@ -1,10 +1,14 @@
 plugins {
     id 'java'
-    id("maven-publish")
+    id 'maven-publish'
 }
 
 group = 'edu.hagensv'
 version = '0.1.0'
+
+java {
+    withSourcesJar()
+}
 
 repositories {
     mavenCentral()
@@ -27,8 +31,12 @@ publishing {
         }
     }
     publications {
-        gpr(MavenPublication) {
-            from(components.java)
+        maven(MavenPublication) {
+            groupId = 'edu.hagensv'
+            artifactId = 'java-console'
+            version = '0.1.0'
+
+            from components.java
         }
     }
 }
