@@ -18,7 +18,7 @@ dependencies {
 publishing {
     repositories {
         maven {
-            name = "GitHubPackages"
+            name = "java-console"
             url = uri("https://maven.pkg.github.com/HAGENSV/java-console")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
