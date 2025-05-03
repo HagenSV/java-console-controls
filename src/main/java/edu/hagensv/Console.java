@@ -1,4 +1,4 @@
-package com.hagen;
+package edu.hagensv;
 
 public class Console {
 
