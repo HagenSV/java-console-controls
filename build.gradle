@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 
-group = 'com.hagen'
+group = 'edu.hagensv'
 version = '1.0-SNAPSHOT'
 
 repositories {
