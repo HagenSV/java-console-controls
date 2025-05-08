@@ -81,7 +81,8 @@ public class ConsoleCursor {
     }
 
     public static void clearLine(){
-        clearLine(Mode.ALL);
+        System.out.println("\033[2K");
+        System.out.flush();
     }
 
     public static void clearLine(Mode mode){
