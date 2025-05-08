@@ -32,7 +32,7 @@ publishing {
     }
     publications {
         maven(MavenPublication) {
-            groupId = 'edu.hagensv'
+            groupId = 'edu.hagensv.io'
             artifactId = 'java-console'
             version = '0.2.0'
 
