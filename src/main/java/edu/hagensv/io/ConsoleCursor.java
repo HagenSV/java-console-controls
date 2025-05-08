@@ -1,6 +1,6 @@
-package edu.hagensv;
+package edu.hagensv.io;
 
-public class Console {
+public class ConsoleCursor {
 
     public enum Mode {
         AFTER(0),
@@ -96,39 +96,5 @@ public class Console {
      */
     public static void setCursorPos(int x, int y){
         System.out.printf("\033[%d;%dH", y, x);
-    }
-
-    /**
-     * Set the text color to the specified RGB value.
-     * @param r the red component (0-255)
-     * @param g the green component (0-255)
-     * @param b the blue component (0-255)
-     */
-    public static void setTextColor(int r, int g, int b) {
-        System.out.printf("\033[38;2;%d;%d;%dm",r,g,b);
-    }
-
-    /**
-     * Set the background color to the specified RGB value.
-     * @param r the red component (0-255)
-     * @param g the green component (0-255)
-     * @param b the blue component (0-255)
-     */
-    public static void setBackgroundColor(int r, int g, int b) {
-        System.out.printf("\033[48;2;%d;%d;%dm",r,g,b);
-    }
-
-    /**
-     * Clear the text color to the default color.
-     */
-    public static void clearTextColor() {
-        System.out.print("\033[39m");
-    }
-
-    /**
-     * Clear the background color to the default color.
-     */
-    public static void clearBackgroundColor(){
-        System.out.print("\033[49m");
     }
 }
